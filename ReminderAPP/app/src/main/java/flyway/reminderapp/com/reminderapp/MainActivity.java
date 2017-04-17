@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         myArray.add("John");
-        myArray.add("Cena");
+        myArray.add("Robert");
         myArray.add("Robert");
         myArray.add("Myself");
 
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, myArray);
         myListView.setAdapter(itemsAdapter);
 
-        //make it so that when an item is clicked the item does something
+        //make it so that when an item is clicked does something
         myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override

@@ -14,11 +14,7 @@ import android.widget.TimePicker;
 
 public class AddInfo extends AppCompatActivity {
 
-    public void nextActivity(View view){
-        Log.i("TApped", "Clicked");
-        Intent intent = new Intent();
-        startActivity(intent);
-    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +28,7 @@ public class AddInfo extends AppCompatActivity {
         EditText textInput = (EditText) findViewById(R.id.inputText);
 
 
-    //TextClock add the time
+        //TextClock add the time
         TimePicker clock = (TimePicker) findViewById(R.id.timePicker);
 
 
@@ -42,5 +38,13 @@ public class AddInfo extends AppCompatActivity {
 
     //DatePicker add the date
 //        DatePicker date = (DatePicker) findViewById(R.id.datePicker);
+    }
+
+    //on button clicked method
+    public void nextActivity(View view){
+        Log.i("TApped", "Clicked");
+        Intent intent = new Intent(AddInfo.this, MainActivity2.class);
+        //Start the activity
+        startActivity(intent);
     }
 }

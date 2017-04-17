@@ -37,7 +37,7 @@ public class MainActivity2 extends AppCompatActivity {
         ArrayList<String> myListView2 = new ArrayList<>();
 
 
-        myListView2.add("Jorge");
+        myListView2.add("Goerge");
 
         ArrayAdapter<String> listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, myListView2);
         listView2.setAdapter(listAdapter);
